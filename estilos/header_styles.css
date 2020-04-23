@@ -1,14 +1,14 @@
 body {
     margin: 0;
-    background-color: #AB88FF;
+    background-color: #8F57FD;
+    font-family: 'Muli', sans-serif;
 }
 .header {
     width: 100%;
     height: 80px;
-    background-color: #AB88FF;
+    background-color: #8f57fd;
     display: flex;
     justify-content: space-between;
-    font-family: 'Muli', sans-serif;
     align-items: center;
 }
 .header__img {
@@ -53,5 +53,29 @@ body {
 }
 .header__menu--profile p {
     margin: 0;
+    color: white;
+}
+.searchEngine {
+    height: 300px;
+}
+.searchEngine__title {
+    color: white;
+    font-size: 25px;
+}
+.input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+}
+input:focus, input.input:focus {
+    outline: none;
+}
+::placeholder {
     color: white;
 }
