@@ -160,3 +160,9 @@ input:focus, input.input:focus {
 }
 .footer a:hover {
     text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .carousel {
+        overflow: scroll;
+    }
+}
