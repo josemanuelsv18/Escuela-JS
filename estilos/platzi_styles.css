@@ -59,6 +59,9 @@ body {
 }
 .searchEngine {
     height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .searchEngine__title {
     color: white;
