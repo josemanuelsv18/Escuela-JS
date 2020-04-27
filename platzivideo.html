@@ -1,107 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <link rel="stylesheet" href="estilos/platzi_styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
-        <title>PlatziVideo</title>
-    </head>
-    <body>
-        <header class="header">
-            <img class="header__img" src="https://imgur.com/X82wnbV.png" alt="Logo PlatziVideo">
-            <div class="header__menu">
-                <div class="header__menu--profile">
-                    <img src="https://imgur.com/tccsPvQ.png" alt="User">
-                    <p>Perfil</p>
-                </div>
-                <ul>
-                    <li><a href="#">Cuenta</a></li>
-                    <li><a href="#">Cerrar Sesión</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="main">
-            <section class="searchEngine">
-                <h2 class="searchEngine__title">¿Qué quieres ver hoy?</h2>
-                <input class="input" type="text" placeholder="Buscar...">
-            </section>
-            <section class="carousel">
-                <div class="carousel__container">
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/3268257/pexels-photo-3268257.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260.jpg" alt="fire">
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play button"/>
-                                <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus button"/>
-                            </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2020 16+ 114 minutos</p>
-                        </div>  
-                    </div>
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/3783044/pexels-photo-3783044.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260.jpg" alt="women"/>
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play button"/>
-                                <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus button"/>
-                            </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2019 18+ 146 minutos</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/3041347/pexels-photo-3041347.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260.jpg" alt="road"/>
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play button"/>
-                                <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus button"/>
-                            </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2020 16+ 120 minutos</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://imgur.com/QXb9lGy.jpg" alt="road"/>
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play button"/>
-                                <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus button"/>
-                            </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2018 8+ 85 minutos</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/4054069/pexels-photo-4054069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="road"/>
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play button"/>
-                                <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus button"/>
-                            </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2020 16+ 105 minutos</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="carousel-item__img" src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="road"/>
-                        <div class="carousel-item__details">
-                            <div>
-                                <img src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play button"/>
-                                <img src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus button"/>
-                            </div>
-                            <p class="carousel-item__details--title">Título descriptivo</p>
-                            <p class="carousel-item__details--subtitle">2020 16+ 105 minutos</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="estilos/styles.css">
+  <!-- Title -->
+  <title>PlatziVideo</title>
+</head>
+<body>
+    <header class="header">
+      <img class="header__img" src="https://imgur.com/X82wnbV.png" alt="Platzi Video">
+      <div class="header__menu">
+        <div class="header__menu--profile">
+          <img src="https://imgur.com/tccsPvQ.png" alt="profile icon">
+          <p>Perfil</p>
         </div>
-            <footer class="footer">
-                <a href="#">Términos de uso</a>
-                <a href="#">Declaración de privacidad</a>
-                <a href="#">Centro de ayuda</a>
-            </footer>
-    </body>
+        <ul>
+          <li><a href="/">Cuenta</a></li>
+          <li><a href="/">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="main">
+      <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+      <input type="text" class="input" placeholder="Buscar...">
+    </section>
+
+    <h2 class="categories__title">Mi lista</h2>
+
+    <section class="carousel">
+      <div class="carousel__container">
+    
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/3268257/pexels-photo-3268257.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260.jpg" alt="fire"  />
+          <div class="carousel-item__details">
+            <div>
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon"> 
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/3783044/pexels-photo-3783044.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260.jpg" alt="women"  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/3041347/pexels-photo-3041347.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260.jpg" alt="road" />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/904276/pexels-photo-904276.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="pinture"  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://imgur.com/QXb9lGy.jpg" alt="mountain" />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/4054069/pexels-photo-4054069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="motocycle"  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="rome"  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="carousel-item__img" src="https://images.pexels.com/photos/413879/pexels-photo-413879.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""  />
+          <div class="carousel-item__details">
+            <div>             
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/play--v1.png" alt="Play Icon"> 
+              <img class="carousel-item__details--img" src="https://img.icons8.com/flat_round/64/000000/plus.png" alt="Plus Icon">
+            </div>
+            <p class="carousel-item__details--title">Título descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="/">Terminos de uso</a>
+      <a href="/">Declaración de privacidad</a>
+      <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
 </html>
