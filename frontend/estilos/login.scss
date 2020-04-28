@@ -1,3 +1,4 @@
+$blanco: white;
 body {
     margin: 0;
     font-family: 'Muli', sans-serif;
@@ -5,7 +6,7 @@ body {
 .header {
     align-items: center;
     background-color: #21C08B;
-    color: white;
+    color: $blanco;
     display: flex;
     height: 100px;
     justify-content: space-between;
@@ -28,9 +29,9 @@ body {
 }
 .login__container {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
+    border: 2px solid $blanco;
     border-radius: 40px;
-    color: white;
+    color: $blanco;
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
@@ -46,13 +47,13 @@ body {
     font-size: 14px;
 }
 .login__container--remember-me {
-    color: white;
+    color: $blanco;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 .login__container--remember-me a {
-    color: white;
+    color: $blanco;
     font-size: 14px;
     text-decoration: none;
 }
@@ -75,12 +76,11 @@ body {
 }
 .login__container--register {
     font-size: 14px;
-
 }
 .login__container--register a{
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: $blanco;
     text-decoration: none;
 }
 .login__container--register a:hover {
@@ -91,7 +91,7 @@ body {
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $blanco;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -101,13 +101,13 @@ body {
     height: 50px;
 }
 ::placeholder {
-    color: white;
+    color: $blanco;
 }
 .button {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
     border: none;
-    color: white;
+    color: $blanco;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -125,7 +125,7 @@ body {
     background-color: #AB88ff;
 }
 .footer a {
-    color: white;
+    color: $blanco;
     font-size: 14px;
     cursor: pointer;
     padding-left: 30px;
