@@ -31,7 +31,7 @@ function juego() {
         election = 1;
     } else if (paper.checked) {
         election = 2;
-    } else {
+    } else if(scissors.checked){
         election = 3;
     }
     
