@@ -51,7 +51,7 @@ function mayoriaDeEdad(persona) {
     }
 }
 
-var acceso_dengado = persona => persona.edad != es_mayor_de_edad;
+var acceso_dengado = persona => persona.edad =! es_mayor_de_edad;
 
 function permitirAcceso(persona){
     if(acceso_dengado(persona)){
