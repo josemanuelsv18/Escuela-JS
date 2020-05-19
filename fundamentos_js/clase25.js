@@ -12,7 +12,7 @@ class persona {
     }
 }
  
-class desarrollado extends persona {
+class desarrollador extends persona {
     constructor(nombre, apellido, altura, genero){
         super(nombre, apellido, altura, genero);
     }
