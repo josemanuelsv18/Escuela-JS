@@ -11,7 +11,6 @@ function obtenerPersonaje(id){
     $.get(URL, opts, onPeopleResponse);
 }
 
-for(var i = 1; i < 70; i++){
+for(var i = 1; i < 100; i++){
     obtenerPersonaje(i);
 }
-
