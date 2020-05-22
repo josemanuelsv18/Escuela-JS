@@ -6,13 +6,17 @@ const VERDE = document.getElementById('verde');
 
 class Juego{
     constructor(){
-        this.inicializar()
+        this.inicializar();
+        this.generarSecuencia();
     }
     inicializar(){
         BTN_INICIO.classList.add('hide');
     }
+    generarSecuencia(){
+        this.secuencia = new Array(10).fill(0).map(n => Math.floor(Math.random() * 4))
+    }
 }
 
 function empezarJuego(){
-    var juego = new Juego()
+    window.juego = new Juego()
 }
