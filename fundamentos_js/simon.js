@@ -9,11 +9,12 @@ class Juego{
     constructor(){
         this.inicializar();
         this.generarSecuencia();
-        this.siguienteNivel();
+        setTimeout(this.siguienteNivel, 500)
     }
 
     inicializar(){
-        this.elegirColor = this.elegirColor.bind(this)
+        this.elegirColor = this.elegirColor.bind(this);
+        this.siguienteNivel = this.siguienteNivel.bind(this);
         BTN_INICIO.classList.add('hide');
         this.nivel = 1;
         this.colores = {
@@ -103,7 +104,7 @@ class Juego{
                 if(this.nivel === (ULTIMO_NIVEL + 1)){
                 //juego Ganado
                }else{
-                   setTimeout(this.siguienteNivel, 2000); 
+                   setTimeout(this.siguienteNivel, 1500); 
                }
             }
         } else {
