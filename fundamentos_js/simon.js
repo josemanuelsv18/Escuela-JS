@@ -13,9 +13,10 @@ class Juego{
     }
 
     inicializar(){
+        this.inicializar = this.inicializar.bind(this);
         this.elegirColor = this.elegirColor.bind(this);
         this.siguienteNivel = this.siguienteNivel.bind(this);
-        BTN_INICIO.classList.add('hide');
+        this.toggleBtnEmpezar()
         this.nivel = 1;
         this.colores = {
             celeste,
@@ -23,6 +24,14 @@ class Juego{
             naranja,
             verde
         }
+    }
+    toggleBtnEmpezar(){
+      if(BTN_INICIO.classList.contains('hide')){
+          BTN_INICIO.classList.remove('hide');
+      } else {
+        BTN_INICIO.classList.add('hide');
+      }  
+        
     }
 
     generarSecuencia(){
@@ -102,14 +111,25 @@ class Juego{
                 this.nivel++;
                 this.deleteClickEvent()
                 if(this.nivel === (ULTIMO_NIVEL + 1)){
-                //juego Ganado
+                this.ganoEljuego()
                }else{
                    setTimeout(this.siguienteNivel, 1500); 
                }
             }
         } else {
-            //Game over
+            this.perdioElJuego();
         }
+    }
+    ganoEljuego(){
+        swal('Ganaste!', 'Pasaste todos los niveles y ganaste este juego de Platzi', 'success')
+            .then(this.inicializar);
+    }
+    perdioElJuego(){
+        swal('Perdiste :(', 'No te Preocupes puedes volver a intentarlo', "error")
+            .then(() => {
+                this.deleteClickEvent();
+                this.inicializar();
+            })
     }
 }
 
