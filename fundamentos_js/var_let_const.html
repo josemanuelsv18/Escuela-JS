@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 36 - Var Let y Const</title>
+    </head>
+    <body>
+        <script>
+            var sacha = {
+                nombre: 'Sacha',
+                apellido: 'Lifszyc',
+                edad: 28
+            }
+            var josemanuel = {
+                nombre: 'Josemanuel',
+                apellido: 'Sifontes',
+                edad: 18
+            }
+
+            function esMayorDeEdad(persona){
+                var mensaje
+                if(persona.edad >= 18){
+                    mensaje = 'es mayor de edad'
+                }else{
+                    mensaje = 'es menor de edad'
+                }
+                console.log(persona.nombre + ' ' + mensaje);
+            }
+            esMayorDeEdad(sacha);
+            esMayorDeEdad(josemanuel);
+        </script>      
+    </body>
+</html>

@@ -7,6 +7,7 @@ const opts = {crossDomain: true};
 function obtenerPersonaje(id, callback){
     const URL = `${API_URL}${PEOPLE_URL.replace(':id', id)}`;
     $.get(URL, opts, function(persona){
+        console.log(persona);
         console.log(`Hola yo soy ${persona.name}`);
     });
 

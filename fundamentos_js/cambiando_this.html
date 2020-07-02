@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiando This</title>
+</head>
+<body>
+    <h1>Cambiando el contexto al llamar a una función</h1>
+    <script>
+        const sacha = {
+            nombre: 'Sacha',
+            apellido: 'Lyfszyc',
+            edad: 28
+        }
+        const josemanuel = {
+            nombre: 'Josemanuel',
+            apellido: 'Sifontes',
+            edad: 18
+        }
+
+        function saludar(saludo = 'Hola'){
+            console.log(`${saludo}, mi nombre es ${this.nombre}`)
+        }
+
+        const saludarJosemanuel = saludar.bind(josemanuel);
+        const saludarSacha = saludar.bind(sacha);
+
+        //setTimeout(saludar.bind(sacha), 1000) El set time out tambien se puede ejecutar de esta manera
+        
+        saludarJosemanuel();
+        saludarSacha();
+
+        //saludar.call(josemanuel, 'Vea parce');
+
+        //saludar.apply(sacha, ['Hola che']); 
+    </script>
+</body>
+</html>
