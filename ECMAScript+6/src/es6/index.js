@@ -81,3 +81,54 @@ console.log(globalVar);
 const a = 'b';
 //!(a = 'a';)
 console.log(a);
+
+//Clase 4
+
+let name = 'Josemanuel';
+let age = 18;
+//before
+obj = {name: name, age: age};
+//es6
+obj2 = {name, age}; //En ES6 si no le asignas un valor al parametro de un objeto este
+//se predefine con el mismo nombre del parametro
+console.log(obj2);
+
+//arrow functions
+const names = [
+    {name: 'Josemanuel', age: 18, country: 'VE'},
+    {name: 'Oscar', age: 32, country: 'MX'},
+    {name: 'Yesica', age: 24, country: 'CO'}
+]
+//before
+let listOfNames = names.map(function (item){
+    console.log(item.name);
+})
+//es6
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfName3 = (name, age, country) => {
+    //code
+}
+
+const listOfName4 = name => {
+    //code
+}
+
+const square = num => num * num;
+
+//Promesas
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if(true){
+            resolve('Hey!');
+        }else {
+            reject('ERROR!!!');
+        }
+    })
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hola'))
+    .catch(error => console.log(error));
