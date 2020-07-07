@@ -10,6 +10,6 @@ if(numbers.includes(9)){
 //potencia
 let base = 4;
 let exponente = 3;
-let result = base ** exponent //con el doble asterisco puedes realizar la 
+let result = base ** exponente //con el doble asterisco puedes realizar la 
 //operación de potencia
 console.log(result);
