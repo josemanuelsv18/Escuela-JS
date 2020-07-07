@@ -132,3 +132,61 @@ helloPromise()
     .then(response => console.log(response))
     .then(() => console.log('Hola'))
     .catch(error => console.log(error));
+
+//Clase 5
+//clases
+class Calculator {
+    constructor(){
+        this.valueA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        let suma = this.valueA + this.valueB;
+        return suma;
+    }
+    rest(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        let diferencia = this.valueA - this.valueB;
+        return diferencia;
+    }
+    multi(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        let producto = this.valueA * this.valueB;
+        return producto;
+    }
+    div(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        let rsltd = this.valueA / this.valueB;
+        return rsltd;
+    }
+}
+
+const calc = new Calculator();
+console.log(calc.sum(2, 2));
+console.log(calc.rest(10, 3));
+console.log(calc.multi(5, 4));
+console.log(calc.div(24, 4));
+
+//modulos
+import { hello } from './module';
+hello();
+
+//generadores
+function* helloWorld() {
+    if(true){
+        yield 'Hello, ';
+    }
+    if(true){
+        yield 'world';
+    }
+}
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
