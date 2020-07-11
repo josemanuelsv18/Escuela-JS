@@ -1,4 +1,4 @@
-//object.entries
+//Object.entries
 //Nos regresa una matriz sobre como estan esablecido los parametros y sus valores
 //dentro de los objetos
 const data = {
