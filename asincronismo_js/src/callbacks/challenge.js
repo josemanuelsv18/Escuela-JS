@@ -17,7 +17,7 @@ function fetchData(url_api, callback){
         }
     }
     xhttp.send();
-}
+}gzipped: 28.1K)
 
 //callbacks
 fetchData(API, (error1, data1) => {
