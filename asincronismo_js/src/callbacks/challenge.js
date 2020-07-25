@@ -1,5 +1,5 @@
 //exportado de api
-let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest; //89K (gzipped: 28.1K)
+let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest; 89K (gzipped: 28.1K)
 const API = 'https://rickandmortyapi.com/api/character/';
 
 //verificación
@@ -17,7 +17,7 @@ function fetchData(url_api, callback){
         }
     }
     xhttp.send();
-}gzipped: 28.1K)
+}
 
 //callbacks
 fetchData(API, (error1, data1) => {
