@@ -1,6 +1,3 @@
-const video = document.querySelector("video");
-const button = document.querySelector("button");
-
 //así se usa en el curso, pero es más complicado
 /*function MediaPlayer(config){
     this.media = config.el;
@@ -27,6 +24,4 @@ class MediaPlayer {
     }
 }
 
-const player = new MediaPlayer({el: video});
-
-button.onclick = () => player.playPause();
+export default MediaPlayer
