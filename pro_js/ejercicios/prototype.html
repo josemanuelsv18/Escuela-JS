@@ -62,22 +62,52 @@
             // naruto.saludar();
 
         //object.create
-        const nuevoObjeto = Object.create(objeto);
+            // const heroMethods = {
+            //     saludar: function(){
+            //         console.log(`Hola soy ${this.name}`);
+            //     } 
+            // };
+            // function hero(name){
+            //     const hero = Object.create(heroMethods)
+            //     hero.name = name
+            //     return hero
+            // };
+            // const shisui = hero('Shisui');
+            // const naruto = hero('Naruto');
 
-        const heroMethods = {
-            saludar: function(){
-                console.log(`Hola soy ${this.name}`);
-            } 
+            // shisui.saludar();
+            // naruto.saludar();
+        //Los metodos de hero dentro de Hero
+            // function Hero(name){
+            //     const hero = Object.create(Hero.prototype);
+            //     hero.name = name;
+            //     return hero;
+            // };
+            // Hero.prototype.saludar = function(){
+            //     console.log(`Yo soy ${this.name}`)
+            // }
+
+            // const shisui = Hero('Shisui');
+            // const konan = Hero('Konan');
+
+            // shisui.saludar();
+            // konan.saludar();
+        //new es un atajo
+        function Hero(name){
+            //this = Object.create(Hero.prototype);
+            this.name = name;
+            //return this;
         };
-        function hero(name){
-            
-            return hero
-        };
-        const shisui = hero('Shisui');
-        const naruto = hero('Naruto');
+        Hero.prototype.saludar = function(){
+            console.log(`Yo soy ${this.name}`)
+        }
+
+        const shisui = new Hero('Shisui');
+        const konan = new Hero('Konan');
 
         shisui.saludar();
-        naruto.saludar();
+        konan.saludar();
+     
     </script>
 </body>
 </html>
