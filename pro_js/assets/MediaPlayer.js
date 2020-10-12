@@ -38,6 +38,22 @@ class MediaPlayer {
         
         this._initPlugins()
     }
+    _initPlugins(){
+        const player = {
+            play: () => this.play(),
+            pause: () => this.pause(),
+            media: this.media,
+            get muted(){
+                this.media.muted;
+            },
+            set muted(value){
+                this.media.muted = value
+            }
+        };
+        this.plugins.forEach(plugin => {
+            plugin.run(player)
+        });
+    }
     play(){
         this.media.play();
     }
@@ -49,11 +65,6 @@ class MediaPlayer {
     }
     unmute(){
         this.media.muted = false;
-    }
-    _initPlugins(){
-        this.plugins.forEach(plugin => {
-            plugin.run(this)
-        });
     }
     playPause(){
         if(this.media.paused){
